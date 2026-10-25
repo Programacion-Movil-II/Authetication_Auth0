@@ -2,4 +2,20 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Paleta de colores para diseño moderno -->
+    <color name="primary">#6200EE</color>
+    <color name="primary_dark">#3700B3</color>
+    <color name="accent">#03DAC6</color>
+
+    <!-- Colores de gradiente de fondo (púrpura a azul índigo) -->
+    <color name="gradient_start">#6A1B9A</color>
+    <color name="gradient_end">#1A237E</color>
+
+    <!-- Fondos de componentes -->
+    <color name="card_bg">#FFFFFF</color>
+    <color name="button_logout">#E53935</color>
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="light_gray">#F5F5F5</color>
 </resources>

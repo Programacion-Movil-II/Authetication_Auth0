@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background"
+    android:padding="24dp">
+
+    <!-- Card de Exito de Login -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="8dp"
+        app:strokeWidth="0dp"
+        app:cardBackgroundColor="@color/card_bg"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="32dp">
+
+            <!-- Checkmark / Icono de Exito -->
+            <ImageView
+                android:id="@+id/ivSuccessIcon"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@android:drawable/checkbox_on_background"
+                android:contentDescription="Icono de Exito"
+                android:layout_marginBottom="20dp"
+                app:tint="@android:color/holo_green_dark" />
+
+            <!-- Estado de Login -->
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login Exitoso"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_marginBottom="12dp"
+                android:gravity="center" />
+
+            <!-- Mensaje de bienvenida -->
+            <TextView
+                android:id="@+id/tvMensaje"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¡Felicidades! Has completado el flujo de autenticación segura utilizando Auth0 Universal Login en el navegador."
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"
+                android:lineSpacingExtra="4sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_gray"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Boton de Cerrar Sesion -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Cerrar Sesión"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                app:cornerRadius="16dp"
+                app:backgroundTint="@color/button_logout"
+                android:elevation="4dp" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Footer informativo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sesión activa y protegida con tokens"
+        android:textSize="12sp"
+        android:textColor="#B2FFFFFF"
+        android:layout_marginTop="32dp" />
+
+</LinearLayout>
